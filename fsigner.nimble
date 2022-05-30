@@ -5,6 +5,7 @@ author        = "hc0re"
 description   = "File signer. Sign and verify the ownership of a file."
 license       = "MIT"
 srcDir        = "src"
+binDir        = "bin"
 bin           = @["fsigner"]
 
 # Dependencies
