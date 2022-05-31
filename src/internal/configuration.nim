@@ -9,8 +9,6 @@ proc initializeConfiguration() =
   userKeyPair = createKeyPair()
   let json = Json.encode(value = userKeyPair, pretty = false)
   let signature = signMessage json
-  echo json
-  echo string2ToByteString json
   try:
     var file = open(configDirPath & configFileName, fmWrite)
     defer: file.close()
